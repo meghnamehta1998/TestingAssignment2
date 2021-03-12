@@ -1,0 +1,9 @@
+D:\Meghna\TestingAssignment2\ClassLibrary1\bin\Debug\netcoreapp2.2\StringOperations.deps.json
+D:\Meghna\TestingAssignment2\ClassLibrary1\bin\Debug\netcoreapp2.2\StringOperations.dll
+D:\Meghna\TestingAssignment2\ClassLibrary1\bin\Debug\netcoreapp2.2\StringOperations.pdb
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.csprojAssemblyReference.cache
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.csproj.CoreCompileInputs.cache
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.AssemblyInfoInputs.cache
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.AssemblyInfo.cs
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.dll
+D:\Meghna\TestingAssignment2\ClassLibrary1\obj\Debug\netcoreapp2.2\StringOperations.pdb

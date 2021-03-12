@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringOperations", "StringOperations.csproj", "{1DDC3BFD-724B-4121-9DAC-EE115544548F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTesting", "..\StringTesting\StringTesting.csproj", "{D3F47155-3B97-4CE7-886F-6868D5522AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DDC3BFD-724B-4121-9DAC-EE115544548F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDC3BFD-724B-4121-9DAC-EE115544548F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDC3BFD-724B-4121-9DAC-EE115544548F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDC3BFD-724B-4121-9DAC-EE115544548F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F47155-3B97-4CE7-886F-6868D5522AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F47155-3B97-4CE7-886F-6868D5522AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F47155-3B97-4CE7-886F-6868D5522AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F47155-3B97-4CE7-886F-6868D5522AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {290241B0-1A95-4A03-A530-AB044FF71EAB}
+	EndGlobalSection
+EndGlobal
