@@ -18,5 +18,30 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
+        [Fact]
+        public void Test_CovertToTitleCase()
+        {
+            // Arrange
+            var x = "the CLEVER fox";
+            var Expect = "The CLEVER Fox";
+
+            // Act
+            var result = Operations.CovertToTitleCase(x);
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        [Fact]
+        public void Test_CheckLower()
+        {
+            // Arrange
+            var stringOperation = new Operations();
+            var expectedstring = "meghna";
+
+            // Act
+            var result = stringOperation.CheckLower(expectedstring);
+
+            // Assert
+            Assert.True(result);
+        }
     }
 }
