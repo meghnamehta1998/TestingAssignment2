@@ -43,5 +43,43 @@ namespace StringTesting
             // Assert
             Assert.True(result);
         }
+        [Fact]
+        public void Test_CovertToUpperCaseFirstCharater()
+        {
+            // Arrange
+            var x = "meghna";
+            var Expect = "Meghna";
+
+            // Act
+            var result = Operations.CovertToUpperCaseFirstCharater(x);
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        [Fact]
+        public void Test_CheckUpper()
+        {
+            // Arrange
+            var stringOperation = new Operations();
+            var expectedstring = "MEGHNA";
+
+            // Act
+            var result = stringOperation.CheckUpper(expectedstring);
+
+            // Assert
+            Assert.True(result);
+        }
+        [Fact]
+        public void Test_CheckNumeric()
+        {
+            // Arrange
+            var stringOperation = new Operations();
+            var expectedstring = "12345";
+
+            // Act
+            var result = stringOperation.CheckNumeric(expectedstring);
+
+            // Assert
+            Assert.True(result);
+        }
     }
 }

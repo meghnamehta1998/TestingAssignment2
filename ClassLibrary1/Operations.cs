@@ -92,5 +92,59 @@ namespace StringOperations
                 return false;
             }
         }
+        public static string CovertToUpperCaseFirstCharater(string x)
+        {
+            string s = "";
+            int p = (int)x[0];
+            p = p - 32;
+            s += (char)p;
+            for (int k = 1; k < x.Length; k++)
+            {
+                s += x[k];
+            }
+            return s;
+        }
+        public bool CheckUpper(string x)
+        {
+
+            int count = 0;
+            for (int i = 0; i < x.Length; i++)
+            {
+                char ch = x[i];
+                if (ch >= 'A' && ch <= 'Z')
+                {
+                    count++;
+                }
+            }
+            if (count == x.Length)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool CheckNumeric(string x)
+        {
+
+            int count = 0;
+            for (int i = 0; i < x.Length; i++)
+            {
+                char ch = x[i];
+                if (ch >= '0' && ch <= '9')
+                {
+                    count++;
+                }
+            }
+            if (count == x.Length)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
