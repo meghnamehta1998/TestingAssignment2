@@ -3,21 +3,23 @@ using System.Text;
 
 namespace StringOperations
 {
-    public  class Operations
+    public class Operations
     {
-        public static string ConvertUpperLower(string x) {
+        public static string ConvertUpperLower(string x)
+        {
             string y = "";
-            for(int i = 0; i < x.Length; i++)
+            for (int i = 0; i < x.Length; i++)
             {
                 char ch = x[i];
-                if (ch >= 'A' && ch <= 'Z') {
+                if (ch >= 'A' && ch <= 'Z')
+                {
                     int p = (int)ch;
                     p = p + 32;
                     y += (char)p;
                 }
-                else if(ch>='a' && ch<='z')
+                else if (ch >= 'a' && ch <= 'z')
                 {
-                    int q=(int)ch;
+                    int q = (int)ch;
                     q = q - 32;
                     y += (char)q;
                 }
@@ -34,12 +36,12 @@ namespace StringOperations
             string result = "";
             string[] words = x.Split(" ");
             int index = 0;
-            string[] new_string=new string[words.Length];
+            string[] new_string = new string[words.Length];
             for (int i = 0; i < words.Length; i++)
             {
                 string w = words[i];
                 Console.WriteLine(w);
-                if(w[1]>='A' && w[1] <= 'Z')
+                if (w[1] >= 'A' && w[1] <= 'Z')
                 {
                     new_string[index] = w;
                     index++;
@@ -47,10 +49,10 @@ namespace StringOperations
                 else
                 {
                     string s = "";
-                   int p= (int)w[0];
+                    int p = (int)w[0];
                     p = p - 32;
                     s += (char)p;
-                    for(int k = 1; k < w.Length; k++)
+                    for (int k = 1; k < w.Length; k++)
                     {
                         s += w[k];
                     }
@@ -58,7 +60,7 @@ namespace StringOperations
                     index++;
                 }
             }
-            for(int a = 0; a < index; a++)
+            for (int a = 0; a < index; a++)
             {
                 if (a != 0)
                 {
@@ -66,19 +68,19 @@ namespace StringOperations
                 }
                 else
                 {
-                    result +=   new_string[a];
+                    result += new_string[a];
                 }
             }
             return result;
         }
         public bool CheckLower(string x)
         {
-           
+
             int count = 0;
             for (int i = 0; i < x.Length; i++)
             {
                 char ch = x[i];
-                if (ch >= 'a' && ch <= 'z' )
+                if (ch >= 'a' && ch <= 'z')
                 {
                     count++;
                 }
@@ -145,6 +147,26 @@ namespace StringOperations
             {
                 return false;
             }
+        }
+        public static string RemoveLastCharater(string x)
+        {
+            string result = "";
+            for (int i = 0; i < (x.Length - 1); i++)
+            {
+                result += (char)x[i];
+            }
+            return result;
+
+        }
+        public static int WordCount(string x)
+        {
+            string[] words = x.Split(" ");
+            return words.Length;
+        }
+        public static int ConvertStringToInt(string x)
+        {
+            int number = int.Parse(x);
+            return number;
         }
     }
 }

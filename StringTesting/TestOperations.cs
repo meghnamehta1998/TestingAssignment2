@@ -81,5 +81,41 @@ namespace StringTesting
             // Assert
             Assert.True(result);
         }
+        [Fact]
+        public void Test_RemoveLastCharater()
+        {
+            // Arrange
+            var x = "Meghna";
+            var Expect = "Meghn";
+
+            // Act
+            var result = Operations.RemoveLastCharater(x);
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        [Fact]
+        public void Test_WordCount()
+        {
+            // Arrange
+            var x = "The quick brown fox jumps over the lazy dog";
+            var Expect =9;
+
+            // Act
+            var result = Operations.WordCount(x);
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        [Fact]
+        public void Test_ConvertStringToInt()
+        {
+            // Arrange
+            var x = "12345";
+            var Expect =12345;
+
+            // Act
+            var result = Operations.ConvertStringToInt(x);
+            // Assert
+            Assert.Equal(Expect, result);
+        }
     }
 }
