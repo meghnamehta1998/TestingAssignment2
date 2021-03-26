@@ -3,9 +3,9 @@ using System.Text;
 
 namespace StringOperations
 {
-    public class Operations
+    public static class Operations
     {
-        public static string ConvertUpperLower(string x)
+        public static string ConvertUpperLower(this string x)
         {
             string y = "";
             for (int i = 0; i < x.Length; i++)
@@ -30,7 +30,7 @@ namespace StringOperations
             }
             return y;
         }
-        public static string CovertToTitleCase(string x)
+        public static string CovertToTitleCase(this string x)
         {
             //"the CLEVER fox";
             string result = "";
@@ -73,7 +73,7 @@ namespace StringOperations
             }
             return result;
         }
-        public bool CheckLower(string x)
+        public static bool CheckLower(this string x)
         {
 
             int count = 0;
@@ -94,7 +94,7 @@ namespace StringOperations
                 return false;
             }
         }
-        public static string CovertToUpperCaseFirstCharater(string x)
+        public static string CovertToUpperCaseFirstCharater(this string x)
         {
             string s = "";
             int p = (int)x[0];
@@ -106,7 +106,7 @@ namespace StringOperations
             }
             return s;
         }
-        public bool CheckUpper(string x)
+        public static bool CheckUpper(this string x)
         {
 
             int count = 0;
@@ -127,7 +127,7 @@ namespace StringOperations
                 return false;
             }
         }
-        public bool CheckNumeric(string x)
+        public static bool CheckNumeric(this string x)
         {
 
             int count = 0;
@@ -148,7 +148,7 @@ namespace StringOperations
                 return false;
             }
         }
-        public static string RemoveLastCharater(string x)
+        public static string RemoveLastCharater(this string x)
         {
             string result = "";
             for (int i = 0; i < (x.Length - 1); i++)
@@ -158,12 +158,12 @@ namespace StringOperations
             return result;
 
         }
-        public static int WordCount(string x)
+        public static int WordCount(this string x)
         {
             string[] words = x.Split(" ");
             return words.Length;
         }
-        public static int ConvertStringToInt(string x)
+        public static int ConvertStringToInt(this string x)
         {
             int number = int.Parse(x);
             return number;

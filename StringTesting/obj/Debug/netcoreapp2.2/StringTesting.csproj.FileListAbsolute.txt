@@ -18,3 +18,5 @@ D:\Meghna\TestingAssignment2\StringTesting\bin\Debug\netcoreapp2.2\StringOperati
 D:\Meghna\TestingAssignment2\StringTesting\obj\Debug\netcoreapp2.2\StringTesting.csproj.CopyComplete
 D:\Meghna\TestingAssignment2\StringTesting\obj\Debug\netcoreapp2.2\StringTesting.dll
 D:\Meghna\TestingAssignment2\StringTesting\obj\Debug\netcoreapp2.2\StringTesting.pdb
+D:\Meghna\TestingAssignment2\StringTesting\bin\Debug\netcoreapp2.2\CoverletSourceRootsMapping
+D:\Meghna\TestingAssignment2\StringTesting\obj\Debug\netcoreapp2.2\StringTesting.genruntimeconfig.cache

@@ -34,11 +34,11 @@ namespace StringTesting
         public void Test_CheckLower()
         {
             // Arrange
-            var stringOperation = new Operations();
+            //var stringOperation = new Operations();
             var expectedstring = "meghna";
 
             // Act
-            var result = stringOperation.CheckLower(expectedstring);
+            var result = Operations.CheckLower(expectedstring);
 
             // Assert
             Assert.True(result);
@@ -59,11 +59,11 @@ namespace StringTesting
         public void Test_CheckUpper()
         {
             // Arrange
-            var stringOperation = new Operations();
+            //var stringOperation = new Operations();
             var expectedstring = "MEGHNA";
 
             // Act
-            var result = stringOperation.CheckUpper(expectedstring);
+            var result = Operations.CheckUpper(expectedstring);
 
             // Assert
             Assert.True(result);
@@ -72,11 +72,11 @@ namespace StringTesting
         public void Test_CheckNumeric()
         {
             // Arrange
-            var stringOperation = new Operations();
+            //var stringOperation = new Operations();
             var expectedstring = "12345";
 
             // Act
-            var result = stringOperation.CheckNumeric(expectedstring);
+            var result = Operations.CheckNumeric(expectedstring);
 
             // Assert
             Assert.True(result);
