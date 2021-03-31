@@ -13,10 +13,10 @@ namespace StringTesting
         public void Test_ConvertUpperLower()
         {
             // Arrange
-            var x = "MeGhNa";
+            var test = "MeGhNa";
             var Expect = "mEgHnA";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -27,10 +27,10 @@ namespace StringTesting
         public void Test1_ConvertUpperLower()
         {
             // Arrange
-            var x = "aaBBccDD";
+            var test = "aaBBccDD";
             var Expect = "AAbbCCdd";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -41,10 +41,10 @@ namespace StringTesting
         public void Test2_ConvertUpperLower()
         {
             // Arrange
-            var x = "@!#$%^&*()";
+            var test = "@!#$%^&*()";
             var Expect = "@!#$%^&*()";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -55,10 +55,10 @@ namespace StringTesting
         public void Test3_ConvertUpperLower()
         {
             // Arrange
-            var x = "123456789";
+            var test = "123456789";
             var Expect = "123456789";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -69,10 +69,10 @@ namespace StringTesting
         public void Test4_ConvertUpperLower()
         {
             // Arrange
-            var x = "        ";
+            var test = "        ";
             var Expect = "        ";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -83,10 +83,10 @@ namespace StringTesting
         public void Test5_ConvertUpperLower()
         {
             // Arrange
-            var x = "";
+            var test = "";
             var Expect = "";
             // Act
-            var result = x.ConvertUpperLower();
+            var result = test.ConvertUpperLower();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -97,10 +97,10 @@ namespace StringTesting
         public void Test_CovertToTitleCase()
         {
             // Arrange
-            var x = "the CLEVER fox";
+            var test = "the CLEVER fox";
             var Expect = "The CLEVER Fox";
             // Act
-            var result = x.CovertToTitleCase();
+            var result = test.CovertToTitleCase();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -112,10 +112,10 @@ namespace StringTesting
         public void Test1_CovertToTitleCase()
         {
             // Arrange
-            var x = "AAbc";
+            var test = "AAbc";
             var Expect = "AAbc";
             // Act
-            var result = x.CovertToTitleCase();
+            var result = test.CovertToTitleCase();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -126,10 +126,10 @@ namespace StringTesting
         public void Test2_CovertToTitleCase()
         {
             // Arrange
-            var x = "<>?}{123";
+            var test = "<>?}{123";
             var Expect = "<>?}{123";
             // Act
-            var result = x.CovertToTitleCase();
+            var result = test.CovertToTitleCase();
             // Assert
             Assert.NotEqual(Expect, result);
         }
@@ -140,10 +140,10 @@ namespace StringTesting
         public void Test3_CovertToTitleCase()
         {
             // Arrange
-            var x = "ABCD!@3456{} xyz";
+            var test = "ABCD!@3456{} xyz";
             var Expect = "ABCD!@3456{} Xyz";
             // Act
-            var result = x.CovertToTitleCase();
+            var result = test.CovertToTitleCase();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -238,10 +238,10 @@ namespace StringTesting
         public void Test_CovertToUpperCaseFirstCharater()
         {
             // Arrange
-            var x = "meghna";
+            var test = "meghna";
             var Expect = "Meghna";
             // Act
-            var result = x.CovertToUpperCaseFirstCharater();
+            var result = test.CovertToUpperCaseFirstCharater();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -252,10 +252,10 @@ namespace StringTesting
         public void Test1_CovertToUpperCaseFirstCharater()
         {
             // Arrange
-            var x = "aaaBbbCCC";
+            var test = "aaaBbbCCC";
             var Expect = "AaaBbbCCC";
             // Act
-            var result = x.CovertToUpperCaseFirstCharater();
+            var result = test.CovertToUpperCaseFirstCharater();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -266,10 +266,10 @@ namespace StringTesting
         public void Test2_CovertToUpperCaseFirstCharater()
         {
             // Arrange
-            var x = "@Abcd";
+            var test = "@Abcd";
             var Expect = "@Abcd";
             // Act
-            var result = x.CovertToUpperCaseFirstCharater();
+            var result = test.CovertToUpperCaseFirstCharater();
             // Assert
             Assert.NotEqual(Expect, result);
         }
@@ -350,10 +350,10 @@ namespace StringTesting
         public void Test_RemoveLastCharater()
         {
             // Arrange
-            var x = "Meghna";
+            var test = "Meghna";
             var Expect = "Meghn";
             // Act
-            var result =x.RemoveLastCharater();
+            var result =test.RemoveLastCharater();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -364,10 +364,10 @@ namespace StringTesting
         public void Test1_RemoveLastCharater()
         {
             // Arrange
-            var x = "TestingAssignment";
+            var test = "TestingAssignment";
             var Expect = "TestingAssignmen";
             // Act
-            var result = x.RemoveLastCharater();
+            var result = test.RemoveLastCharater();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -378,10 +378,10 @@ namespace StringTesting
         public void Test_WordCount()
         {
             // Arrange
-            var x = "The quick brown fox jumps over the lazy dog";
+            var test = "The quick brown fox jumps over the lazy dog";
             var Expect =9;
             // Act
-            var result = x.WordCount();
+            var result = test.WordCount();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -392,10 +392,10 @@ namespace StringTesting
         public void Test1_WordCount()
         {
             // Arrange
-            var x = " Abcd EFGH iJKL mnOP QrST uVW XYZ ";
+            var test = " Abcd EFGH iJKL mnOP QrST uVW XYZ ";
             var Expect = 9;
             // Act
-            var result = x.WordCount();
+            var result = test.WordCount();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -406,10 +406,10 @@ namespace StringTesting
         public void Test_ConvertStringToInt()
         {
             // Arrange
-            var x = "12345";
+            var test = "12345";
             var Expect =12345;
             // Act
-            var result = x.ConvertStringToInt();
+            var result = test.ConvertStringToInt();
             // Assert
             Assert.Equal(Expect, result);
         }
@@ -420,10 +420,10 @@ namespace StringTesting
         public void Test1_ConvertStringToInt()
         {
             // Arrange
-            var x = "Abcd";
+            var test = "Abcd";
             var Expect = 0;
             // Act
-            var result = x.ConvertStringToInt();
+            var result = test.ConvertStringToInt();
             // Assert
             Assert.Equal(Expect, result);
         }
