@@ -49,6 +49,48 @@ namespace StringTesting
             Assert.Equal(Expect, result);
         }
         /// <summary>
+        /// Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// </summary>
+        [Fact]
+        public void Test3_ConvertUpperLower()
+        {
+            // Arrange
+            var x = "123456789";
+            var Expect = "123456789";
+            // Act
+            var result = x.ConvertUpperLower();
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        /// <summary>
+        /// Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// </summary>
+        [Fact]
+        public void Test4_ConvertUpperLower()
+        {
+            // Arrange
+            var x = "        ";
+            var Expect = "        ";
+            // Act
+            var result = x.ConvertUpperLower();
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        /// <summary>
+        /// Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// </summary>
+        [Fact]
+        public void Test5_ConvertUpperLower()
+        {
+            // Arrange
+            var x = "";
+            var Expect = "";
+            // Act
+            var result = x.ConvertUpperLower();
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        /// <summary>
         /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
         /// </summary>
         [Fact]
@@ -92,6 +134,20 @@ namespace StringTesting
             Assert.NotEqual(Expect, result);
         }
         /// <summary>
+        /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
+        /// </summary>
+        [Fact]
+        public void Test3_CovertToTitleCase()
+        {
+            // Arrange
+            var x = "ABCD!@3456{} xyz";
+            var Expect = "ABCD!@3456{} Xyz";
+            // Act
+            var result = x.CovertToTitleCase();
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        /// <summary>
         /// Find if all the characters from given input string are in lower case or not
         /// </summary>
         [Fact]
@@ -120,6 +176,62 @@ namespace StringTesting
             Assert.False(result);
         }
         /// <summary>
+        /// Find if all the characters from given input string are in lower case or not
+        /// </summary>
+        [Fact]
+        public void Test2_CheckLower()
+        {
+            // Arrange
+            //var stringOperation = new Operations();
+            var expectedstring = "123456789";
+            // Act
+            var result = expectedstring.CheckLower();
+            // Assert
+            Assert.False(result);
+        }
+        /// <summary>
+        /// Find if all the characters from given input string are in lower case or not
+        /// </summary>
+        [Fact]
+        public void Test3_CheckLower()
+        {
+            // Arrange
+            //var stringOperation = new Operations();
+            var expectedstring = "!@#$%^&*()}{?";
+            // Act
+            var result = expectedstring.CheckLower();
+            // Assert
+            Assert.False(result);
+        }
+        /// <summary>
+        /// Find if all the characters from given input string are in lower case or not
+        /// </summary>
+        [Fact]
+        public void Test4_CheckLower()
+        {
+            // Arrange
+            //var stringOperation = new Operations();
+            var expectedstring = "              ";
+            // Act
+            var result = expectedstring.CheckLower();
+            // Assert
+            Assert.False(result);
+        }
+        /// <summary>
+        /// Find if all the characters from given input string are in lower case or not
+        /// </summary>
+        [Fact]
+        public void Test5_CheckLower()
+        {
+            // Arrange
+            //var stringOperation = new Operations();
+            var expectedstring = "";
+            // Act
+            var result = expectedstring.CheckLower();
+            // Assert
+            Assert.True(result);
+        }
+        /// <summary>
         /// Return a capitalized version of given input string i.e. make the first character have upper case and the rest lower case.
         /// </summary>
         [Fact]
@@ -146,6 +258,20 @@ namespace StringTesting
             var result = x.CovertToUpperCaseFirstCharater();
             // Assert
             Assert.Equal(Expect, result);
+        }
+        /// <summary>
+        /// Return a capitalized version of given input string i.e. make the first character have upper case and the rest lower case.
+        /// </summary>
+        [Fact]
+        public void Test2_CovertToUpperCaseFirstCharater()
+        {
+            // Arrange
+            var x = "@Abcd";
+            var Expect = "@Abcd";
+            // Act
+            var result = x.CovertToUpperCaseFirstCharater();
+            // Assert
+            Assert.NotEqual(Expect, result);
         }
         /// <summary>
         /// Find if all the characters from given input string are in upper case or not
@@ -198,6 +324,20 @@ namespace StringTesting
             // Arrange
             //var stringOperation = new Operations();
             var expectedstring = "abCd";
+            // Act
+            var result = expectedstring.CheckNumeric();
+            // Assert
+            Assert.False(result);
+        }
+        /// <summary>
+        /// Function to identify whether given input string can be converted to a valid numeric value or not.
+        /// </summary>
+        [Fact]
+        public void Test2_CheckNumeric()
+        {
+            // Arrange
+            //var stringOperation = new Operations();
+            var expectedstring = "!@#$%^&";
             // Act
             var result = expectedstring.CheckNumeric();
             // Assert
