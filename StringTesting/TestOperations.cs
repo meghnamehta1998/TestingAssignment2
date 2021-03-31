@@ -6,7 +6,9 @@ namespace StringTesting
 {
     public class TestOperations
     {
-        //Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// <summary>
+        /// Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// </summary>
         [Fact]
         public void Test_ConvertUpperLower()
         {
@@ -18,7 +20,9 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
-        //Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
+        /// <summary>
+        /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
+        /// </summary>
         [Fact]
         public void Test_CovertToTitleCase()
         {
@@ -30,7 +34,9 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
-        //Find if all the characters from given input string are in lower case or not
+        /// <summary>
+        /// Find if all the characters from given input string are in lower case or not
+        /// </summary>
         [Fact]
         public void Test_CheckLower()
         {
@@ -42,7 +48,9 @@ namespace StringTesting
             // Assert
             Assert.True(result);
         }
-        //Return a capitalized version of given input string i.e. make the first character have upper case and the rest lower case.
+        /// <summary>
+        /// Return a capitalized version of given input string i.e. make the first character have upper case and the rest lower case.
+        /// </summary>
         [Fact]
         public void Test_CovertToUpperCaseFirstCharater()
         {
@@ -54,7 +62,9 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
-        //Find if all the characters from given input string are in upper case or not
+        /// <summary>
+        /// Find if all the characters from given input string are in upper case or not
+        /// </summary>
         [Fact]
         public void Test_CheckUpper()
         {
@@ -66,7 +76,9 @@ namespace StringTesting
             // Assert
             Assert.True(result);
         }
-        //Function to identify whether given input string can be converted to a valid numeric value or not.
+        /// <summary>
+        /// Function to identify whether given input string can be converted to a valid numeric value or not.
+        /// </summary>
         [Fact]
         public void Test_CheckNumeric()
         {
@@ -78,7 +90,9 @@ namespace StringTesting
             // Assert
             Assert.True(result);
         }
-        //Function to remove the last character from given the string
+        /// <summary>
+        /// Function to remove the last character from given the string
+        /// </summary>
         [Fact]
         public void Test_RemoveLastCharater()
         {
@@ -90,7 +104,9 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
-        //Get the word count from an input string.
+        /// <summary>
+        /// Get the word count from an input string.
+        /// </summary>
         [Fact]
         public void Test_WordCount()
         {
@@ -102,7 +118,9 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
-        //Convert an input string to integer.
+        /// <summary>
+        /// Convert an input string to integer.
+        /// </summary>
         [Fact]
         public void Test_ConvertStringToInt()
         {
