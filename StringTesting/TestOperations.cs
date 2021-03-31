@@ -35,6 +35,20 @@ namespace StringTesting
             Assert.Equal(Expect, result);
         }
         /// <summary>
+        /// Return a copy of given input string with uppercase characters converted to lowercase and vice versa.
+        /// </summary>
+        [Fact]
+        public void Test2_ConvertUpperLower()
+        {
+            // Arrange
+            var x = "@!#$%^&*()";
+            var Expect = "@!#$%^&*()";
+            // Act
+            var result = x.ConvertUpperLower();
+            // Assert
+            Assert.Equal(Expect, result);
+        }
+        /// <summary>
         /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
         /// </summary>
         [Fact]
@@ -48,6 +62,7 @@ namespace StringTesting
             // Assert
             Assert.Equal(Expect, result);
         }
+
         /// <summary>
         /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
         /// </summary>
@@ -61,6 +76,20 @@ namespace StringTesting
             var result = x.CovertToTitleCase();
             // Assert
             Assert.Equal(Expect, result);
+        }
+        /// <summary>
+        /// Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).
+        /// </summary>
+        [Fact]
+        public void Test2_CovertToTitleCase()
+        {
+            // Arrange
+            var x = "<>?}{123";
+            var Expect = "<>?}{123";
+            // Act
+            var result = x.CovertToTitleCase();
+            // Assert
+            Assert.NotEqual(Expect, result);
         }
         /// <summary>
         /// Find if all the characters from given input string are in lower case or not
@@ -88,7 +117,7 @@ namespace StringTesting
             // Act
             var result = expectedstring.CheckLower();
             // Assert
-            Assert.True(result);
+            Assert.False(result);
         }
         /// <summary>
         /// Return a capitalized version of given input string i.e. make the first character have upper case and the rest lower case.
@@ -144,7 +173,7 @@ namespace StringTesting
             // Act
             var result = expectedstring.CheckUpper();
             // Assert
-            Assert.True(result);
+            Assert.False(result);
         }
         /// <summary>
         /// Function to identify whether given input string can be converted to a valid numeric value or not.
@@ -172,7 +201,7 @@ namespace StringTesting
             // Act
             var result = expectedstring.CheckNumeric();
             // Assert
-            Assert.True(result);
+            Assert.False(result);
         }
         /// <summary>
         /// Function to remove the last character from given the string
@@ -252,7 +281,7 @@ namespace StringTesting
         {
             // Arrange
             var x = "Abcd";
-            var Expect = 12345;
+            var Expect = 0;
             // Act
             var result = x.ConvertStringToInt();
             // Assert

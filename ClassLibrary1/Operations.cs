@@ -165,8 +165,16 @@ namespace StringOperations
         }
         public static int ConvertStringToInt(this string x)
         {
-            int number = int.Parse(x);
-            return number;
+            try
+            {
+                int number = int.Parse(x);
+                return number;
+            }
+            catch(Exception e)
+            {
+                return 0;
+            }
+            
         }
     }
 }
